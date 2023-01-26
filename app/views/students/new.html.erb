@@ -1,0 +1,10 @@
+<h1>Students#new</h1>
+<p>Find me in app/views/students/new.html.erb</p>
+
+<%= form_with model: @student  do |f| %>
+<%= f.text_field :name, placeholder: "enter your name" %>
+<%= f.text_field :age, placeholder: "enter your age" %>
+<%= f.text_field :enroll_number, placeholder: "enter your enroll_number" %>
+<%= f.text_field :branch, placeholder: "enter your branch" %>
+<%= f.submit %>
+<% end %>
